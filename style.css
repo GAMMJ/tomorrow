@@ -1,7 +1,5 @@
-p {
-  color: red;
-  display: block;
-  text-transform: lowercase;
+* {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
