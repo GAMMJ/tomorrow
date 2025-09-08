@@ -1,0 +1,37 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order", "stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "alpha-value-notation": "number",
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "color-hex-length": "short",
+    "color-named": "never",
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "length-zero-no-unit": true,
+    "max-nesting-depth": 6,
+    "media-feature-name-no-unknown": true,
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-case": "lower",
+    "selector-type-no-unknown": true,
+    "shorthand-property-no-redundant-values": true,
+    "time-min-milliseconds": 100,
+    "unit-no-unknown": true,
+
+    "scss/at-function-parentheses-space-before": "never",
+    "scss/at-mixin-pattern": "^.[a-z]+(-[a-z0-9])*",
+    "scss/comment-no-empty": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-first-in-block": true,
+    "scss/dollar-variable-pattern": "^.[a-z]+(-[a-z0-9])*",
+    "scss/double-slash-comment-empty-line-before": "always",
+    "scss/no-duplicate-mixins": true,
+    "scss/operator-no-unspaced": true,
+    "scss/percent-placeholder-pattern": "^.[a-z]+(-[a-z0-9])*"
+  }
+}
