@@ -1,8 +1,8 @@
 // constants
-@use "./constants/colors";
-@use "./constants/typography";
+@use "./constants";
 
 // base
-@use "./base/fonts";
-@use "./base/nomalize";
-@use "./base/reset";
+@use "./base";
+
+// layouts
+@use "./layouts";
