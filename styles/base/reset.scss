@@ -1,21 +1,20 @@
-@use "../constants/typography" as t; // 't'라는 별칭으로 사용
-@use "../constants/colors" as c; // 'c'라는 별칭으로 사용
+@use "../constants" as c;
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: t.$font-main, sans-serif;
+  font-family: c.$font-main, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  font-family: t.$font-main, sans-serif;
-  font-size: t.$font-size-16;
+  font-family: c.$font-main, sans-serif;
+  font-size: c.$font-size-16;
 }
 
 body {
-  font-family: t.$font-main, sans-serif;
+  font-family: c.$font-main, sans-serif;
   color: c.$primary;
 }
 
