@@ -1,3 +1,6 @@
+@use "../constants/typography" as *;
+@use "sass:meta";
+
 @mixin text-style-12() {
   font-size: $font-size-12;
   line-height: $font-height-12;
