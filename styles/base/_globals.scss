@@ -23,17 +23,17 @@
 }
 
 .sm-only {
-  @include responsive(T) {
+  @media screen and (min-width: $md-breakpoint) {
     display: none !important;
   }
 }
 
 .md-only {
-  @media screen and (min-width: #{$md-breakpoint - 1}) {
+  @media screen and (max-width: #{$md-breakpoint - 1}) {
     display: none !important;
   }
 
-  @include responsive(D) {
+  @media screen and (min-width: $lg-breakpoint) {
     display: none !important;
   }
 }
@@ -57,7 +57,7 @@
 }
 
 .lg-hidden {
-  @media screen and (min-width: $md-breakpoint) {
+  @media screen and (min-width: $lg-breakpoint) {
     display: none !important;
   }
 }
