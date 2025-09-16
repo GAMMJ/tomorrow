@@ -449,6 +449,23 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  clip-path: inset(0, 0, 0, 0) !important;
+}
+.visually-hidden:not(caption) {
+  position: absolute !important;
+}
+.visually-hidden * {
+  overflow: hidden !important;
+}
+
 /* 
   * mobile (<768px)
   * fixture                  sm
