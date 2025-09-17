@@ -47,4 +47,56 @@
   &-menu-button {
     color: $blue;
   }
+
+  // tablet
+
+  @include responsive(T) {
+    .logo {
+      position: static;
+      margin-right: 32px;
+      transform: none;
+
+      img {
+        height: 24px;
+      }
+    }
+
+    .btn-primary {
+      width: 88px;
+
+      i {
+        margin-left: 4px;
+      }
+    }
+
+    &-left {
+      @include flexbox(start);
+    }
+
+    &-right {
+      @include flexbox(end);
+
+      .button-group {
+        margin-right: 24px;
+
+        .gnb-icon-button {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &-wrapper {
+      height: 80px;
+    }
+  }
+
+  // desktop
+  @include responsive(D) {
+    &-right {
+      .input-group {
+        width: 264px;
+        margin-right: 24px;
+      }
+    }
+  }
 }
