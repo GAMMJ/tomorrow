@@ -6,6 +6,8 @@
 
   &-list {
     @include flexbox(start);
+
+    margin-left: -#{$padding};
   }
 
   a {
