@@ -1,5 +1,4 @@
-@forward "./fonts";
-@forward "./nomalize";
-@forward "./reset";
-
+@use "./fonts";
+@use "./nomalize";
+@use "./reset";
 @use "./globals";
