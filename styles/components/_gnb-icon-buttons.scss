@@ -40,7 +40,7 @@
     text-align: center;
     letter-spacing: -0.01em;
     background-color: $red;
-    border-radius: $badge-size / 2;
+    border-radius: calc($badge-size / 2);
   }
 
   // tablet
