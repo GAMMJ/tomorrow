@@ -2,8 +2,15 @@
 @use "../constants" as *;
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $sidebar-level;
   width: 240px;
+  height: 100vh;
   padding: 32px 20px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background-color: $white;
 
   &-user,
@@ -88,9 +95,13 @@
         padding: 0 12px;
 
         &:active {
-          color: $bluew;
+          color: $blue;
         }
       }
     }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
