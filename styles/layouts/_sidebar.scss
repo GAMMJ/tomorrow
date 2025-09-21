@@ -2,6 +2,8 @@
 @use "../constants" as *;
 
 .sidebar {
+  @include no-scrollbar;
+
   $sidebar-width: 240px;
 
   position: fixed;
@@ -107,9 +109,5 @@
         }
       }
     }
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
