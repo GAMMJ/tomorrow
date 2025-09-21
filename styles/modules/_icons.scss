@@ -1,3 +1,5 @@
+@use "../constants" as *;
+
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
 
@@ -62,6 +64,7 @@ i {
 }
 
 .ic-new::before {
+  color: $red;
   content: "\e90c";
 }
 
